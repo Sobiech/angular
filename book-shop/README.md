@@ -1,9 +1,4 @@
-# Angular (4) - Shopping Basket Example
-
-
-[![Build Status](https://travis-ci.org/jonsamwell/angular-simple-shopping-cart.svg?branch=master)](https://travis-ci.org/jonsamwell/angular-simple-shopping-cart)  
-
-See it in action https://jonsamwell.github.io/angular-simple-shopping-cart/
+# Angular (4) - Shopping Basket
 
 # Architectural Summary
 
@@ -15,7 +10,6 @@ See it in action https://jonsamwell.github.io/angular-simple-shopping-cart/
 * SinonJS used for test mocking.
 * Minimal styling with Foundation CSS used as the base framework and SCSS used to process custom styles.
 * Basic example of async e2e test using new (async/await) Typescript syntax.
-
 
 # Setup
 
