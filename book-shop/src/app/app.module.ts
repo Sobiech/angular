@@ -1,46 +1,57 @@
-import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
-import { BrowserModule } from "@angular/platform-browser";
+import { NgModule }         from '@angular/core';
+import { FormsModule }      from '@angular/forms';
+import { Http, HttpModule } from '@angular/http';
+import { BrowserModule }    from '@angular/platform-browser';
 
-import { AppComponent } from "./app.component";
-import { AppRoutingModule } from "./app.routing";
-import { CheckoutComponent } from "./components/checkout/checkout.component";
-import { OrderConfirmationComponent } from "./components/order-confirmation/order-confirmation.component";
-import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
-import { StoreFrontComponent } from "./components/store-front/store-front.component";
-import { PopulatedCartRouteGuard } from "./route-gaurds/populated-cart.route-gaurd";
-import { DeliveryOptionsDataService } from "./services/delivery-options.service";
-import { ProductsDataService } from "./services/products.service";
-import { ShoppingCartService } from "./services/shopping-cart.service";
-import { LocalStorageServie, StorageService } from "./services/storage.service";
+import { 
+  BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { 
+  TranslateLoader, 
+  TranslateModule }         from '@ngx-translate/core';
+
+import { 
+  TranslateHttpLoader }     from '@ngx-translate/http-loader';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent }     from './app.component';
+
+import { AuthGuard }        from './shared';
+
+export function HttpLoaderFactory(http: Http) {
+
+    return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
+}
 
 @NgModule({
-  bootstrap: [AppComponent],
-  declarations: [
-    AppComponent,
-    ShoppingCartComponent,
-    StoreFrontComponent,
-    CheckoutComponent,
-    OrderConfirmationComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    AppRoutingModule
-  ],
-  providers: [
-    ProductsDataService,
-    DeliveryOptionsDataService,
-    PopulatedCartRouteGuard,
-    LocalStorageServie,
-    { provide: StorageService, useClass: LocalStorageServie },
-    {
-      deps: [StorageService, ProductsDataService, DeliveryOptionsDataService],
-      provide: ShoppingCartService,
-      useClass: ShoppingCartService
-    }
-  ]
+
+    declarations: [
+        AppComponent
+    ],
+
+    imports: [
+
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+
+        HttpModule,
+
+        AppRoutingModule,
+
+        TranslateModule.forRoot({
+    
+            loader: {
+
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [Http]
+            }
+        })
+    ],
+
+    providers: [AuthGuard],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

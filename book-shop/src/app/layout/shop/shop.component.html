@@ -1,0 +1,17 @@
+<div class="row">
+
+  	<div class="small-12 medium-8 columns">
+
+    	<ul class="product-list">
+      		
+      		<li *ngFor="let bookElement of bookList" class="product-container">
+
+      			<book-element [book]="bookElement"></book-element>
+
+      		</li>
+
+    	</ul>
+	
+	</div>
+
+</div>

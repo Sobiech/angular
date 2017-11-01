@@ -1,0 +1,19 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    
+    <ul class="list-group">
+
+        <a routerLink="/shop" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-archive"></i>&nbsp;{{ 'MAIN_WEB' | translate }}
+        </a>
+
+        <a routerLink="/cart" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-shopping-cart"></i>&nbsp;{{ 'CART' | translate }}
+        </a>
+
+        <a routerLink="/contact" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-comment"></i>&nbsp;{{ 'CONTACT' | translate }}
+        </a>
+
+    </ul>
+
+</nav>

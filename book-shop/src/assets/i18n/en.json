@@ -1,0 +1,49 @@
+{	
+
+	"LANGUAGE" : "Language",	
+	"ENGLISH"  : "English",
+	"POLISH"   : "Polish",
+
+	"PROFILE" : "Profile",
+	"INBOX"	  : "Inbox",
+	"SETTINGS": "Settings",
+
+
+	"LOGIN"    : "Log in",
+	"REGISTER" : "Register",
+	"LOG_OUT"  : "Log out",
+
+	"SHOP" : "Shop",
+	"BOOK_SHOP" : "Welcome in Book Shop",
+
+	"CATEGORY": "Category",
+	"BOOK"	  : "Book",
+	"SEARCH"  : "Search",
+	
+	"CART"    : "Shopping Cart",
+	"CONTACT" : "Contact",
+
+	"MAIN_WEB"	   : "Main",
+	"LOGIN_PAGE"   : "Login page",
+	"REGISTER_PAGE": "Register page",
+
+	"RESPONSE": {
+
+		"404": {
+			"INFO":"404 - Page Not Found",
+			"DESC":"This page does not exist",
+			"ACTION":"Redirect to shop"
+		}
+		
+	},
+
+	"PLACEHOLDER" : {
+
+		"FULL_NAME": "Full name",
+		"EMAIL"	   : "Email",
+		"PASSWORD" : "Password",
+		"REPEAT_PA": "Repeat password"
+		
+	}
+
+}

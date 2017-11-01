@@ -1,0 +1,57 @@
+{	
+
+	"LANGUAGE" : "Język",	
+	"ENGLISH"  : "Angielski",
+	"POLISH"   : "Polski",
+
+	"PROFILE" : "Profil",
+	"INBOX"	  : "Wiadomości",
+	"SETTINGS": "Ustawienia",
+
+	"LOGIN"    : "Zaloguj",
+	"REGISTER" : "Zarejestruj",
+	"LOG_OUT"  : "Wyloguj",
+
+	"SHOP" : "Sklep",
+	"BOOK_SHOP" : "Witaj w sklepie z książkami",
+
+	"CATEGORY": "Kategorie",
+	"BOOK"	  : "Książka",
+	"SEARCH"  : "Szukaj",
+	
+	"CART"	  : "Koszyk",
+	"CONTACT" : "Kontakt",
+	
+	"MAIN_WEB": "Strona główna",	
+	"LOGIN_PAGE": "Strona logowania",
+	"REGISTER_PAGE": "Strona rejestracji",
+
+	"RESPONSE": {
+
+		"404": {
+			"INFO":"404 - Nie odnaleziono strony",
+			"DESC":"Strona, której szukasz nie istnieje",
+			"ACTION":"Przekieruj do sklepu"
+		}
+
+	},
+
+	"PLACEHOLDER" : {
+
+		"FULL_NAME": "Imię i nazwisko",
+		"EMAIL"	   : "Adres email",
+		"PASSWORD" : "Hasło",
+		"REPEAT_PA": "Powtórz hasło"
+		
+	},
+
+	"BOOK_ELEMENT" : {
+		"AUTHOR": 	"Autor: {{val}}",
+		"TITLE": 	"Tytuł: {{val}}",
+		"YEAR": 	"Rok wydania: {{val}}",
+		"LANG": 	"Język: {{val}}",
+		"COUNTRY": 	"Kraj: {{val}}",
+		"LINK": 	"Link: {{val}}"
+	}
+
+}
